@@ -32,13 +32,21 @@ function findFirstCharacter(data, char) {
     return pos
 }
 
+function isMovePossible(pos, move) {
+    return pos > move
+}
+
+function isFoundChar(source, target) {
+    return source === target
+}
+
 /**
  * Finds sequence of chars in the passed array
  * @param data - 2-dimensional array
  * @param word - word to search for
  * @returns {boolean} result if it's fully found
  */
-function findWord(data, word) {
+export function findWord(data, word) {
     const chars = word.split('')
     let pos = findFirstCharacter(data, chars[0])
 
@@ -60,16 +68,4 @@ function findWord(data, word) {
         return true
     }
     return false
-}
-
-function isMovePossible(pos, move) {
-    return pos > move
-}
-
-function isFoundChar(source, target) {
-    return source === target
-}
-
-export {
-    findWord
 }

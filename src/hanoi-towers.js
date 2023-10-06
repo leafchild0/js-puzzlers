@@ -18,7 +18,7 @@
  * @param target - target tower
  * @param intermediate - intermediate tower
  */
-function moveDisks(disks, origin, target, intermediate) {
+export function moveDisks(disks, origin, target, intermediate) {
     if (disks <= 0) return
 
     if (disks === 1) {
@@ -35,8 +35,4 @@ function moveDisks(disks, origin, target, intermediate) {
     // move top disks - 1 disks from intermediate to target,
     // using origin as an intermediate
     moveDisks(disks - 1, intermediate, target, origin)
-}
-
-export {
-    moveDisks
 }

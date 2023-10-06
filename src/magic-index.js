@@ -6,7 +6,7 @@
  * Write a recursive algorithm that finds the first magic index
  */
 
-function findMagicNumber(array) {
+export function findMagicNumber(array) {
     return findNumber(array, 0, array.length - 1)
 }
 
@@ -26,8 +26,4 @@ function findNumber(array, start, end) {
 
     // Search right
     return findNumber(array, Math.max(mid + 1, current), end)
-}
-
-export {
-    findMagicNumber
 }
