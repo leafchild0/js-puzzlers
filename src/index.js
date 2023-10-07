@@ -1,7 +1,8 @@
-import { findWord } from './twod-words.js'
-import { moveDisks } from './hanoi-towers.js'
-import { findMagicNumber } from './magic-index.js'
+import { findWord } from './arrays/twod-words.js'
+import { moveDisks } from './recursion/hanoi-towers.js'
+import { findMagicNumber } from './recursion/magic-index.js'
 import { gcd } from './common-divider.js'
+import { permute } from './recursion/string-permutations.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -23,3 +24,7 @@ console.assert(findMagicNumber([1, 4, 4, 4, 5, 5, 6, 6, 6, 11, 12, 12, 12, 15, 1
 
 console.assert(gcd(10, 30) === 10)
 console.assert(gcd(9, 15) === 3)
+
+console.log(Array.from(permute('ab')).join(' '))
+console.log(Array.from(permute('abc')).join(' '))
+console.log(Array.from(permute('abcd')).join(' '))
