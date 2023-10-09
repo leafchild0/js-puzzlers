@@ -5,6 +5,7 @@ import { gcd } from './common-divider.js'
 import { permute } from './recursion/string-permutations.js'
 import { isOneEditAway } from './strings/one-edit-away.js'
 import { shrinkString } from './strings/shrink-string.js'
+import { pairs } from './strings/pairs.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -35,3 +36,5 @@ console.assert(isOneEditAway('tank', 'tanc') === true)
 console.assert(isOneEditAway('tank', 'tankist') === false)
 
 console.log(shrinkString('abbb vvvv s rttt rr eeee f'))
+
+console.log(pairs([-5, -2, 5, 4, 3, 7, 2, 1, -1, -2, 15, 6, 12, -4, 3], 10))
