@@ -4,6 +4,7 @@ import { findMagicNumber } from './recursion/magic-index.js'
 import { gcd } from './common-divider.js'
 import { permute } from './recursion/string-permutations.js'
 import { isOneEditAway } from './strings/one-edit-away.js'
+import { shrinkString } from './strings/shrink-string.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -32,3 +33,5 @@ console.log(Array.from(permute('abcd')).join(' '))
 
 console.assert(isOneEditAway('tank', 'tanc') === true)
 console.assert(isOneEditAway('tank', 'tankist') === false)
+
+console.log(shrinkString('abbb vvvv s rttt rr eeee f'))
