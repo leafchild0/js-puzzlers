@@ -6,6 +6,8 @@ import { permute } from './recursion/string-permutations.js'
 import { isOneEditAway } from './strings/one-edit-away.js'
 import { shrinkString } from './strings/shrink-string.js'
 import { pairs } from './arrays/pairs.js'
+import { haveDuplicates } from './arrays/duplicates.js'
+import { longestDistinctSub } from './strings/longest-distinct-sub.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -38,3 +40,9 @@ console.assert(isOneEditAway('tank', 'tankist') === false)
 console.log(shrinkString('abbb vvvv s rttt rr eeee f'))
 
 console.log(pairs([-5, -2, 5, 4, 3, 7, 2, 1, -1, -2, 15, 6, 12, -4, 3], 10))
+
+console.assert(haveDuplicates([1, 2, 3, 4, 5, 1]) === true)
+console.assert(haveDuplicates([1, 2, 3, 4, 5, 6]) === false)
+
+console.assert(longestDistinctSub('asdjqjdiosijjj') === 'qjdios')
+console.assert(longestDistinctSub('abcdefjaidjioewfjwdc') === 'bcdefjai')
