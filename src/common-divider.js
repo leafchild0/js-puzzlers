@@ -4,7 +4,7 @@
  * For example for 9 and 3, biggest divider is 3, but for 12 and 13 it's 1
  * @param x - first number
  * @param y - second number
- * @returns divider number
+ * @returns {number} divider
  */
 export function gcd(x, y) {
     x = Math.abs(x);

@@ -3,6 +3,7 @@ import { moveDisks } from './recursion/hanoi-towers.js'
 import { findMagicNumber } from './recursion/magic-index.js'
 import { gcd } from './common-divider.js'
 import { permute } from './recursion/string-permutations.js'
+import { isOneEditAway } from './strings/one-edit-away.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -28,3 +29,6 @@ console.assert(gcd(9, 15) === 3)
 console.log(Array.from(permute('ab')).join(' '))
 console.log(Array.from(permute('abc')).join(' '))
 console.log(Array.from(permute('abcd')).join(' '))
+
+console.assert(isOneEditAway('tank', 'tanc') === true)
+console.assert(isOneEditAway('tank', 'tankist') === false)
