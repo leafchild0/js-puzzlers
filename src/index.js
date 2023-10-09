@@ -5,7 +5,7 @@ import { gcd } from './common-divider.js'
 import { permute } from './recursion/string-permutations.js'
 import { isOneEditAway } from './strings/one-edit-away.js'
 import { shrinkString } from './strings/shrink-string.js'
-import { pairs } from './strings/pairs.js'
+import { pairs } from './arrays/pairs.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
