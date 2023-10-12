@@ -8,7 +8,7 @@ import { shrinkString } from './strings/shrink-string.js'
 import { pairs } from './arrays/pairs.js'
 import { haveDuplicates } from './arrays/duplicates.js'
 import { longestDistinctSub } from './strings/longest-distinct-sub.js'
-import { bracesMatching } from './strings/braces.js'
+import { bracesMatching } from './arrays/braces.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
