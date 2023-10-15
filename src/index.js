@@ -9,6 +9,7 @@ import { pairs } from './arrays/pairs.js'
 import { haveDuplicates } from './arrays/duplicates.js'
 import { longestDistinctSub } from './strings/longest-distinct-sub.js'
 import { bracesMatching } from './arrays/braces.js'
+import { sortStackInPlace } from './arrays/sort-stack-in-place.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -50,3 +51,5 @@ console.assert(longestDistinctSub('abcdefjaidjioewfjwdc') === 'bcdefjai')
 
 console.assert(bracesMatching('{{{}}}') === true)
 console.assert(bracesMatching('{{{{}}}') === false)
+
+console.log(sortStackInPlace([8, 6, 3, 1, 4, 4]))
