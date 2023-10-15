@@ -10,6 +10,7 @@ import { haveDuplicates } from './arrays/duplicates.js'
 import { longestDistinctSub } from './strings/longest-distinct-sub.js'
 import { bracesMatching } from './arrays/braces.js'
 import { sortStackInPlace } from './arrays/sort-stack-in-place.js'
+import { nearestLeftSmaller } from './arrays/nearest-left-smaller.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -53,3 +54,6 @@ console.assert(bracesMatching('{{{}}}') === true)
 console.assert(bracesMatching('{{{{}}}') === false)
 
 console.log(sortStackInPlace([8, 6, 3, 1, 4, 4]))
+
+// Should print '_, _, 1, 1, 3, 1, 2, 6, 2, 4'
+nearestLeftSmaller([4, 1, 8, 3, 8, 2, 6, 7, 4, 9])
