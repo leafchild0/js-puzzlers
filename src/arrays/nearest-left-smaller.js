@@ -20,5 +20,5 @@ export function nearestLeftSmaller(array) {
         stack.push(array[i])
     }
 
-    console.log(result)
+    return result.trim()
 }

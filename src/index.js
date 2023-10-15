@@ -55,5 +55,4 @@ console.assert(bracesMatching('{{{{}}}') === false)
 
 console.log(sortStackInPlace([8, 6, 3, 1, 4, 4]))
 
-// Should print '_, _, 1, 1, 3, 1, 2, 6, 2, 4'
-nearestLeftSmaller([4, 1, 8, 3, 8, 2, 6, 7, 4, 9])
+console.assert(nearestLeftSmaller([4, 1, 8, 3, 8, 2, 6, 7, 4, 9]) === '_, _, 1, 1, 3, 1, 2, 6, 2, 4,')
