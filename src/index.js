@@ -11,6 +11,7 @@ import { longestDistinctSub } from './strings/longest-distinct-sub.js'
 import { bracesMatching } from './arrays/braces.js'
 import { sortStackInPlace } from './arrays/sort-stack-in-place.js'
 import { nearestLeftSmaller } from './arrays/nearest-left-smaller.js'
+import { findFailingBlocks } from './arrays/find-failing-blocks.js'
 
 const twoDarray = [
     ["a", "b", "c", "d", "e", "f", "g", "h"],
@@ -56,3 +57,12 @@ console.assert(bracesMatching('{{{{}}}') === false)
 console.log(sortStackInPlace([8, 6, 3, 1, 4, 4]))
 
 console.assert(nearestLeftSmaller([4, 1, 8, 3, 8, 2, 6, 7, 4, 9]) === '_, _, 1, 1, 3, 1, 2, 6, 2, 4,')
+
+const array = [
+    [1, 1, 1, 1, 1],
+    [0, 0, 1, 0, 1],
+    [0, 0, 1, 0, 0],
+    [0 ,0, 1, 0, 0]
+]
+
+console.log(findFailingBlocks(array, {row: 0, col: 2}))
